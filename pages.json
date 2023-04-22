@@ -1,17 +1,56 @@
 {
 	"pages": [{
-		"path": "pages/index/index",
+		"path": "pages/schedule/schedule",
 		"style": {
-			"navigationBarTitleText": "uni-app"
+			"navigationBarTitleText": "",
+			"enablePullDownRefresh": false
 		}
+
+	}, {
+		"path": "pages/catalogue/catalogue",
+		"style": {
+			"navigationBarTitleText": "",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/profile/profile",
+		"style": {
+			"navigationBarTitleText": "",
+			"enablePullDownRefresh": false
+		}
+
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8",
+		"navigationBarTitleText": "广陵王妃刘辩参见",
+		"navigationBarBackgroundColor": "#c5bfad",
+		"backgroundColor": "#e9e6c5",
 		"app-plus": {
 			"background": "#efeff4"
 		}
+	},
+
+	"tabBar": {
+		"selectedColor": "#515151",
+		"list": [{
+				"pagePath": "pages/schedule/schedule",
+				"text": "书签",
+				"iconPath": "static/tab-icons/schedule.png",
+				"selectedIconPath": "static/tab-icons/schedule_active.png"
+			},
+			{
+				"pagePath": "pages/catalogue/catalogue",
+				"text": "目录",
+				"iconPath": "static/tab-icons/catalogue.png",
+				"selectedIconPath": "static/tab-icons/catalogue_active.png"
+			},
+			{
+				"pagePath": "pages/profile/profile",
+				"text": "主页",
+				"iconPath": "static/tab-icons/profile.png",
+				"selectedIconPath": "static/tab-icons/profile_active.png"
+			}
+		]
 	}
 }
